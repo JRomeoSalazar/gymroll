@@ -35,7 +35,7 @@
 					    <div class="indice">
 					    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 							
-							<?php get_template_part( 'partials/loop', 'single-gymroll' ); ?>
+							<?php get_template_part( 'partials/loop', 'category-gymroll' ); ?>
 					
 					    <?php endwhile; ?>
 					    </div>	
