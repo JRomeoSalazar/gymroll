@@ -1,0 +1,113 @@
+/******************************************************************
+
+Stylesheet: Mediun Stylesheet
+
+Styles apply to 40.063em and up.
+
+******************************************************************/
+
+/*********************
+GENERAL STYLES
+*********************/
+body {
+	margin: 0 0 232px; /* bottom = footer height + 20px (margin) * Footer Bottom Sticky */
+}
+
+	
+/*********************
+HEADER STYLES
+*********************/
+
+.header {
+
+	#inner-header {	
+		.rrss {
+			position: absolute;
+			bottom: 15px;
+			right: 15px;
+		}
+	}
+}
+
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+
+/* entry content */
+.entry-content {
+			
+	
+	/* at this larger size, we can start to align images */
+	.alignleft, img.alignleft { 
+		margin-right: 1.5em; 
+		display: inline; 
+		float: left; 
+	}
+	.alignright, img.alignright { 
+		margin-left: 1.5em; 
+		display: inline; 
+		float: right; 
+	}
+	.aligncenter, img.aligncenter { 
+		margin-right: auto; 
+		margin-left: auto; 
+		display: block; 
+		clear: both; 
+	}
+			
+} /* end .entry-content */
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+
+.widget {
+	padding: 0 10px;
+	margin: 2.2em 0;
+}
+
+/*********************
+FOOTER STYLES
+*********************/
+	
+/*
+check your menus here. do they look good?
+do they need tweaking?
+*/
+.footer {
+	height: 212px;
+	nav, .copyright {
+		display: inline-block;
+		*display: inline;
+		zoom: 1;
+		width: 49%;
+	}
+	.nav-header {
+		text-align: right;
+		padding-right: 10px;
+		border-right: solid 1px #404040;
+	}
+	.footer-links {
+		padding: 0px 10px 0px;
+		margin-bottom: 15px;
+		border-right: solid 1px #404040;
+		border-bottom: none;
+		ul {
+			li { text-align: right; }
+		}
+	} /* end .footer-links */
+	.copyright {
+		padding-top: 0px;
+		padding-left: 3px;
+		text-align: left;
+	}
+}
+			
+/*********************
+FOUNDATION STYLES
+*********************/
+
+/*********************
+PLUGIN STYLES
+*********************/
