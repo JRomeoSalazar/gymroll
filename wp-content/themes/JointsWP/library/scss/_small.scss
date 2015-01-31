@@ -264,6 +264,39 @@ div.front-secciones {
 }
 
 /*********************
+ÍNDICE DE CATEGORÍA
+*********************/
+div.indice-categoria {
+	margin-top: 30px;
+	h1 {
+		@include border-radius();
+		@include box-shadow(rgba(0,0,0,0.25) 0 0 3px);
+		background-color: $light-grey;
+		border: solid 7px white;
+		font-family: "Bevas Neue";
+		margin-bottom: 20px;
+		padding-left: 15px;
+		text-transform: uppercase;
+		&.pavimento-everoll { color: $pavimento-everoll-color; }
+	}
+	div.indice {
+		a {
+			color: $dark-grey;
+			display: block;
+			font-family: "Bevas Neue";
+			font-size: 30px;
+			padding: 5px;
+			text-transform: uppercase;
+			&:nth-child(odd) { background-color: lighten($light-grey, 30%); }
+			&:nth-child(even) { background-color: lighten($light-grey, 50%); }
+		}
+	}
+	nav.page-navigation {
+		margin-top: 30px;
+	}
+}
+
+/*********************
 POSTS & CONTENT STYLES
 *********************/
 

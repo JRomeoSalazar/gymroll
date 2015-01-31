@@ -61,6 +61,13 @@ $primary-color: #30addb;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
+$dark-grey: #3a3a3a;
+$grey: #5a5a5a;
+$light-grey: lighten($grey, 20%);
+$pavimento-everoll-color: #a2ff00;
+$material-sala-color: #00ccff;
+$maquinas-fitness-color: #ffcc00;
+$otro-equipamiento-color: #ff00ff;
 
 // We use these to make sure border radius matches unless we want it different.
 // $global-radius: 3px;

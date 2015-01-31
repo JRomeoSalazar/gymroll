@@ -251,6 +251,18 @@ function gr_category_template( $template ) {
 	return $template;
 }
 
+/* Función para que las post de Gymroll cojan la plantilla deseada */
+add_filter( 'single_template', 'gr_single_template' );
+function gr_single_template( $template ) {
+	$categories = array("pavimento-everoll", "material-sala", "maquinas-fitness", "otro-equipamiento");
+	global $post;
+	if( in_category( $categories, $post ) ) {
+		$template = locate_template( array( 'single-gymroll.php', 'single.php' ) );
+	}
+	
+	return $template;
+}
+
 /*********************
 INCLUDE NEEDED FILES
 *********************/

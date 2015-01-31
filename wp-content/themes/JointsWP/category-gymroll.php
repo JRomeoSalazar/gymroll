@@ -4,12 +4,7 @@
 			
 				<div id="inner-content" class="row clearfix">
 				
-				    <div id="main" class="large-12 medium-12 columns first clearfix" role="main">
-				
-					   <!-- Título de la categoría -->
-					    <h1>
-						    <span><?php _e("Categoría:", "jointstheme"); ?></span> <?php single_cat_title(); ?>
-				    	</h1>
+				    <div id="main" class="large-12 medium-12 columns first clearfix indice-categoria" role="main">
 
 				    	<!-- Modificamos el loop para que muestre los post de la categoría
 				    		ordenados por el custom field "numero_indice" -->
@@ -19,7 +14,7 @@
 				    		$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 							$args = array(
 								'category_name'		=> $categories[0]->slug,
-								'posts_per_page'	=> 1,
+								'posts_per_page'	=> 2,
 								'meta_key'			=> 'numero_indice',
 								'orderby'			=> 'meta_value_num',
 								'order'				=> 'ASC',
@@ -29,13 +24,21 @@
 							// query
 							$wp_query = new WP_Query( $args );
 						?>
+				
+					    <!-- Título de la categoría -->
+					    <h1 class="<?php echo $categories[0]->slug; ?>"><?php single_cat_title(); ?></h1>
+
+					    <!-- Descargar catálogo completo -->
+
 
 				    	<!-- Muestra todos los post de la categoría (índice) -->
+					    <div class="indice">
 					    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+							
+							<?php get_template_part( 'partials/loop', 'single-gymroll' ); ?>
 					
-					    	<?php get_template_part( 'partials/loop', 'category-gymroll' ); ?>
-					
-					    <?php endwhile; ?>		
+					    <?php endwhile; ?>
+					    </div>	
 							
 							<!-- Navegación por páginas -->
 					        <?php if (function_exists('joints_page_navi')) { ?>
