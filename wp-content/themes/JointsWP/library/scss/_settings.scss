@@ -67,7 +67,7 @@ $light-grey: lighten($grey, 20%);
 $pavimento-everoll-color: #a2ff00;
 $material-sala-color: #00ccff;
 $maquinas-fitness-color: #ffcc00;
-$otro-equipamiento-color: #ff00ff;
+$otro-equipamiento-color: darken(#ff00ff, 15%);
 
 // We use these to make sure border radius matches unless we want it different.
 // $global-radius: 3px;

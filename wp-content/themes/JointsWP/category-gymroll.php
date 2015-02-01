@@ -14,7 +14,7 @@
 				    		$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 							$args = array(
 								'category_name'		=> $categories[0]->slug,
-								'posts_per_page'	=> 2,
+								'posts_per_page'	=> 10,
 								'meta_key'			=> 'numero_indice',
 								'orderby'			=> 'meta_value_num',
 								'order'				=> 'ASC',
@@ -32,12 +32,27 @@
 
 
 				    	<!-- Muestra todos los post de la categoría (índice) -->
-					    <div class="indice">
-					    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-							
-							<?php get_template_part( 'partials/loop', 'category-gymroll' ); ?>
+					    <div class="indice row">
+					    <?php
+					    	/* The Loop */
+					    	$i = 0;
+					    	
+					    	$end = "";
+					    	
+					    	$grid = "large-4 medium-4 columns";
+					    	
+					    	if (have_posts()) : while (have_posts()) : the_post();
+
+							if ( $i >= 3 && $i % 3 == 0 ) echo "</div><div class=\"row sticky-posts\">";
+
+							$i++;
+
+							if ( $i == $wp_query->post_count ) $end = "end";
+
+							get_template_part( 'partials/loop', 'category-gymroll' );
 					
-					    <?php endwhile; ?>
+					    	endwhile; 
+					    ?>
 					    </div>	
 							
 							<!-- Navegación por páginas -->

@@ -263,6 +263,13 @@ function gr_single_template( $template ) {
 	return $template;
 }
 
+/* Función para añadir nuevos tamaños de imagen */
+add_action( 'after_setup_theme', 'gr_image_sizes' );
+
+function gr_image_sizes() {
+	add_image_size('featured-indice', 235, 180, true);
+}
+
 /*********************
 INCLUDE NEEDED FILES
 *********************/

@@ -274,21 +274,34 @@ div.indice-categoria {
 		background-color: $light-grey;
 		border: solid 7px white;
 		font-family: "Bevas Neue";
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 		padding-left: 15px;
 		text-transform: uppercase;
 		&.pavimento-everoll { color: $pavimento-everoll-color; }
+		&.material-sala { color: $material-sala-color; }
+		&.maquinas-fitness { color: $maquinas-fitness-color; }
+		&.otro-equipamiento { color: $otro-equipamiento-color; }
 	}
 	div.indice {
-		a {
-			color: $dark-grey;
-			display: block;
-			font-family: "Bevas Neue";
-			font-size: 30px;
-			padding: 5px;
-			text-transform: uppercase;
-			&:nth-child(odd) { background-color: lighten($light-grey, 30%); }
-			&:nth-child(even) { background-color: lighten($light-grey, 50%); }
+		div.columns {
+			a.titulo-seccion {
+				color: $dark-grey;
+				display: block;
+				font-family: "Bevas Neue";
+				font-size: 30px;
+				padding: 5px;
+				text-align: center;
+				text-transform: uppercase;
+				&:nth-child(odd) {  }
+				&:nth-child(even) { background-color: lighten($light-grey, 50%); }
+			}
+			img.attachment-featured-indice {
+				@include border-radius();
+				@include box-shadow(rgba(0,0,0,0.25) 0 0 3px);
+				border: solid 7px white;
+				display: block;
+				margin-top: 5px;
+			}
 		}
 	}
 	nav.page-navigation {
