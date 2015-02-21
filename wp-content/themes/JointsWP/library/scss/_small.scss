@@ -287,6 +287,7 @@ div.indice-categoria {
 		&.otro-equipamiento { color: $otro-equipamiento-color; }
 	}
 	div.indice {
+		padding-bottom: 30px;
 		div.columns {
 			a.titulo-seccion {
 				color: $dark-grey;
