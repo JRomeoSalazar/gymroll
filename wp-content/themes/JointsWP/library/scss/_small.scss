@@ -20,7 +20,7 @@ html {
 
 body {
 	background: url('../images/bg.jpg');
-	margin: 0 0 263px; /* bottom = footer height + 20px (margin) * Footer Bottom Sticky */
+	margin: 0 0 320px; /* bottom = footer height + 20px (margin) * Footer Bottom Sticky */
 }
 
 /********************
@@ -798,7 +798,7 @@ FOOTER STYLES
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 243px; /* Misma altura que margen inferior de body */
+    height: 290px; /* Misma altura que margen inferior de body */
     width: 100%;
 
     background: #323232;

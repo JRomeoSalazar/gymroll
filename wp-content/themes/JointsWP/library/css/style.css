@@ -8729,7 +8729,7 @@ html {
 /* line 21, ../scss/_small.scss */
 body {
   background: url("../images/bg.jpg");
-  margin: 0 0 263px;
+  margin: 0 0 320px;
   /* bottom = footer height + 20px (margin) * Footer Bottom Sticky */
 }
 
@@ -9399,7 +9399,7 @@ FOOTER STYLES
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 243px;
+  height: 290px;
   /* Misma altura que margen inferior de body */
   width: 100%;
   background: #323232;
@@ -9481,7 +9481,7 @@ MEDIUM
   *********************/
   /* line 12, ../scss/_medium.scss */
   body {
-    margin: 0 0 232px;
+    margin: 0 0 265px;
     /* bottom = footer height + 20px (margin) * Footer Bottom Sticky */
   }
 
@@ -9542,7 +9542,7 @@ MEDIUM
   */
   /* line 78, ../scss/_medium.scss */
   .footer {
-    height: 212px;
+    height: 235px;
     /* end .footer-links */
   }
   /* line 80, ../scss/_medium.scss */
