@@ -43,7 +43,7 @@
 					    	
 					    	if (have_posts()) : while (have_posts()) : the_post();
 
-							if ( $i >= 3 && $i % 3 == 0 ) echo "</div><div class=\"row sticky-posts\">";
+							if ( $i >= 3 && $i % 3 == 0 ) echo "</div><div class=\"indice row\">";
 
 							$i++;
 
