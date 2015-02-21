@@ -43,7 +43,7 @@
 				<div class="row front-secciones">
 					<div class="large-3 medium-3 columns">
 						<a href="<?php echo $pavimento_everoll_link; ?>" title="<?php echo $pavimento_everoll->name; ?>">
-							<img src="<?php echo get_bloginfo('template_url'); ?>/library/images/secciones/01-pavimento-everoll
+							<img src="<?php echo get_bloginfo('template_url'); ?>/library/images/secciones/01-pavimento-deportivo
 							.jpg" alt="Pavimento Everoll" />
 						</a>
 					</div>
