@@ -8833,7 +8833,7 @@ HEADER STYLES
 .header #inner-header h1.splash img {
   display: block;
   max-width: 400px;
-  margin: 0 auto;
+  margin: 0 auto 0 200px;
 }
 /* line 154, ../scss/_small.scss */
 .header #inner-header li {

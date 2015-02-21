@@ -7,7 +7,10 @@
 				<h5 class="nav-header">Menu</h5>
 				<?php joints_footer_links(); ?>
 			</nav>
-			<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.</p>
+			<p class="source-org copyright">
+				&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. /
+				<a href="<?php echo get_permalink( get_page_by_path( 'aviso-legal' ) ); ?>" title="Aviso Legal" target="_blank">Aviso Legal</a>
+			</p>
 		</footer> <!-- end .footer -->
 						
 		<!-- all js scripts are loaded in library/joints.php -->
