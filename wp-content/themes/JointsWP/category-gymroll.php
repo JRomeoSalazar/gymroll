@@ -14,7 +14,7 @@
 				    		$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 							$args = array(
 								'category_name'		=> $categories[0]->slug,
-								'posts_per_page'	=> 10,
+								'posts_per_page'	=> 12,
 								'meta_key'			=> 'numero_indice',
 								'orderby'			=> 'meta_value_num',
 								'order'				=> 'ASC',
