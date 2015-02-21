@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Custom Page Example
+Template Name: Página sin barra lateral
 */
 ?>
 
@@ -10,7 +10,7 @@ Template Name: Custom Page Example
 			
 				<div id="inner-content" class="row clearfix">
 			
-				    <div id="main" class="large-8 medium-8 columns first clearfix" role="main">
+				    <div id="main" class="large-12 medium-12 columns first clearfix" role="main">
 
 					    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
@@ -23,8 +23,6 @@ Template Name: Custom Page Example
 					    <?php endif; ?>
 	
 				    </div> <!-- end #main -->
-    
-				    <?php get_sidebar(); ?>
 				    
 				</div> <!-- end #inner-content -->
     

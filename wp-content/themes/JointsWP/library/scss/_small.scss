@@ -155,7 +155,11 @@ HEADER STYLES
 			list-style: none;
 		}
 		.rrss {
-			
+			span {
+			    font-size: 20px;
+			    line-height: 30px;
+			    vertical-align: top;
+			}
 		}
 	}
 }

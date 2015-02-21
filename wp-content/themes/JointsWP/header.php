@@ -58,6 +58,8 @@
 							<?php $contacto = get_option("rv_contacto"); ?>
 
 							<div class="rrss">
+								<span class="dashicons dashicons-phone"></span>
+								<span><?php echo $contacto['telefono']; ?></span>
 								<a href="<?php echo $contacto['facebook']; ?>" class="webicon facebook" title="Facebook <?php bloginfo('name'); ?>" target="_blank">
 					      			¡Síguenos en Facebook!
 					      		</a>
